@@ -1,0 +1,146 @@
+.admin-addemp-container{
+	height: 92vh;
+	width: 80%;
+	position: absolute;
+	top: 8vh;
+	left: 20%;
+	font-family: Poppin;
+}
+
+.admin-addemp-container h1{
+	font-size: 4rem;
+	padding: 20px 0 20px 0;
+	text-transform: uppercase;
+}
+
+.admin-addemp{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.admin-addemp form{
+	width: 80%;
+	height: 85%;
+	background-color: #333;
+	border-radius: 10px;
+	box-shadow: 0 0 10px 5px skyblue;
+}
+
+.addemp-inputs{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.addemp-inputs-container{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.addemp-input{
+	height: 25%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	width: 80%;
+}
+
+.addemp-input label{
+	font-size: 2rem;
+	color: #f4f4f4;
+}
+
+.addemp-input input[type=text], input[type=password], input[type=email]{
+	font-size: 1.6rem;
+	height: 35px;
+	width: 100%;
+	color: #f4f4f4;
+	padding: 2px 4px 4px;
+	border-bottom: 2px solid #5cb0ff;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	background-color: transparent;
+	transition-property: border-bottom;
+	transition-duration: .5s;
+	transition-timing-function: ease-in;
+	outline: none;
+}
+
+.addemp-input input[type=text]:hover, input[type=password]:hover, input[type=email]:hover{
+	border-bottom: 3px solid #f2e529;
+	
+}
+
+.addemp-input input[type=text]:focus, input[type=password]:focus, input[type=email]:focus{
+	border-bottom: 2px solid #6fff47;
+}
+
+.addemp-input select{
+	width: 50%;
+	padding: 2px 4px 4px 4px;
+	font-size: 1.6rem;
+	background-color: #5cb0ff;
+	color: #333;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.submit-btn, .reset-btn, .cancel-btn{
+	width: 60%;
+	height: 35%;
+	font-size: 2rem;
+	align-self: center;
+	margin: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.submit-btn{
+	border: none;
+	background-color: #2667ff;
+	color: #f7f7f7;
+	transition: background-color .5s ease, color .5s ease, border .5s ease;
+}
+
+.submit-btn:hover{
+	border: 2px solid #2667ff;
+	color: #2667ff;
+	background-color: transparent;
+}
+
+.reset-btn{
+	border: 2px solid #26e305;
+
+	background-color: transparent;
+	color: #26e305;
+	transition: background-color .5s ease, color .5s ease, border .5s ease;
+}
+
+.reset-btn:hover{
+	border: none;
+	color: #f7f7f7;
+	background-color: #26e305;
+}
+
+#datepicker{
+	color: #f4f4f4;
+}
+
+.cancel-btn{
+	background-color: #db2e2e;
+	border: none;
+	border-radius: 5px;
+	padding: 5px;
+	color: #f5f5f5;
+	transition-property: background-color, color;
+	transition-duration: 1s;
+}
+
+.cancel-btn:hover{
+	background-color: transparent;
+	color: #db2e2e;
+	border: 2px solid #db2e2e;
+}

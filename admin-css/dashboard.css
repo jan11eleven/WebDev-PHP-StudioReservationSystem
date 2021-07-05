@@ -1,0 +1,61 @@
+.index-content-container{
+	height: 92vh;
+	width: 80%;
+	position: absolute;
+	top: 8vh;
+	left: 20%;
+}
+
+.dashboard-img{
+	background-color: #f4f4f4;
+	height: 100%;
+	overflow: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation: svg-animation 1s ease-in;
+}
+
+#Circle1, #Circle2, #Circle3{
+	animation: circle 3s infinite linear;
+	transform-origin: center;
+	transform-box: fill-box; 
+}
+
+#Graph{
+	animation: graph 3s infinite linear;
+ 
+}
+
+@keyframes svg-animation{
+	0% {
+		opacity: 0;
+	}
+
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes circle{
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes graph{
+	0% {
+		transform: translateY(0px);
+	}
+
+	50%{
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
